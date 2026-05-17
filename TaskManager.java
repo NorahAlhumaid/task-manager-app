@@ -15,7 +15,8 @@ public class TaskManager {
             System.out.println("1. Add Task");
             System.out.println("2. View Tasks");
             System.out.println("3. Delete Task");
-            System.out.println("4. Exit");
+            System.out.println("4. Complete Task");
+            System.out.println("5. Exit");
             System.out.print("Choose: ");
 
             choice = input.nextInt();
@@ -71,6 +72,35 @@ public class TaskManager {
 
 case 4:
 
+    if (tasks.isEmpty()) {
+
+        System.out.println("No tasks available.");
+    }
+
+    else {
+
+        System.out.println("Enter task number to mark as completed:");
+        int completeIndex = input.nextInt();
+
+        if (completeIndex > 0 && completeIndex <= tasks.size()) {
+
+            String completedTask = tasks.get(completeIndex - 1);
+
+            tasks.set(completeIndex - 1, completedTask + " [Completed]");
+
+            System.out.println("Task marked as completed.");
+        }
+
+        else {
+
+            System.out.println("Invalid task number.");
+        }
+    }
+
+    break;
+
+case 5:
+
     System.out.println("Exiting...");
     break;
 
@@ -78,7 +108,7 @@ case 4:
                     System.out.println("Invalid choice.");
             }
 
-       } while (choice != 4);
+      } while (choice != 5);
 
         input.close();
     }
