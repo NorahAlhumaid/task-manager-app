@@ -11,4 +11,7 @@ A simple Java console application for managing daily tasks.
 - GitHub
 
 ## Author
-Norah
+ Norah ziyad alhumaid
+ fatima abdullah alsalman 
+ jury ari almaeen 
+ shmookh eid alabas 
