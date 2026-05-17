@@ -11,7 +11,9 @@ public class TaskManager {
         int choice;
 
         do {
-System.out.println("\n==== Smart Task Manager ====");
+
+System.out.println("\n==== Smart Daily Task Manager ====");
+
             System.out.println("1. Add Task");
             System.out.println("2. View Tasks");
             System.out.println("3. Delete Task");
